@@ -1,1 +1,14 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+  <div class="dashboard-row">
+    <app-carousel></app-carousel>
+    <div class="row mt-3 row-cols-2 g-3">
+      <div *ngFor="let card of cards" class="mb-4">
+        <app-card [currentCard]="card"></app-card>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="nav-row">
+    <app-navigation></app-navigation>
+  </div>

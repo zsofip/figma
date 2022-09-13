@@ -1,0 +1,25 @@
+.dashboard-row {
+  position: absolute;
+  width: 344px;
+  height: 693px;
+  left: 15px;
+  top: 59px;
+  overflow-y: scroll;
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  width: 429px;
+  height: 55px;
+  left: -27px;
+  top: 757px;
+
+  background: #ffffff;
+}
+

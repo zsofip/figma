@@ -1,0 +1,28 @@
+.navIcon {
+  margin: 2px;
+}
+
+.navText {
+  width: 38px;
+  height: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navBtn {
+  border: none;
+  background-color: white;
+  margin: 0 12px;
+
+  align-items: center;
+  text-align: center;
+
+  width: 61px;
+  height: 56px;
+}

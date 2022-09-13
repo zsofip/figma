@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Card } from 'src/app/models/card';
+import { MatAppService } from 'src/app/services/mat-app.service';
+import { AlertComponent } from '../alert/alert.component';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  @Input() currentCard?: Card;
+
+  bookingBtnText: string = "book";
+
+  constructor(private matappservice: MatAppService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  onBooking() {
+    this.dialog.open(AlertComponent);
   }
 
 }

@@ -1,1 +1,24 @@
-<p>carousel works!</p>
+
+<mat-card class="mat-elevation-z">
+  <mat-card-header>
+    <div mat-card-avatar class="avatar"></div>
+    <mat-card-title>Let's start a new trip!</mat-card-title>
+  </mat-card-header>
+
+
+  <div id="#carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div *ngFor="let img of carouselImgs" class="carousel-item active">
+        <img src="../../../assets/images/{{ img }}" class="d-block w-100" alt="carousel image: city">
+      </div>
+    </div>
+  </div>
+
+
+</mat-card>

@@ -9,7 +9,7 @@ export class IconComponent implements OnInit {
 
   link: string = '';
 
-  @Input() type: string = 'user-icon';
+  @Input() type: string = '';
 
   constructor() { }
 

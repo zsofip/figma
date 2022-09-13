@@ -3,3 +3,12 @@
   font-family: "Roboto";
   src: local("Roboto"), url(./assets/fonts/Roboto/Roboto-Regular.ttf);
 }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

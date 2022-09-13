@@ -1,3 +1,4 @@
+import { MatAppService } from './../../services/mat-app.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  carouselImgs: string[] = this.matappservice.carouselImgs;
+
+  constructor(private matappservice: MatAppService) { }
 
   ngOnInit(): void {
   }

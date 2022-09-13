@@ -1,4 +1,12 @@
-<button class="navBtn" (click)="onClick()">
-  <app-icon type="user-icon"></app-icon>
-  {{ btnText }}
-</button>
+<!-- <a *ngFor="let item of navBtns" class="navBtn" (click)="onClick()">
+  <app-icon class="navIcon" [type]="item.icon"></app-icon>
+  <span class="navText">{{ item.text }}</span>
+</a> -->
+
+
+
+    <button mat-icon-button  *ngFor="let item of navBtns" class="navBtn" (click)="onClick()">
+      <app-icon class="navIcon" [type]="item.icon"></app-icon>
+      <span class="navText">{{ item.text }}</span>
+    </button>
+

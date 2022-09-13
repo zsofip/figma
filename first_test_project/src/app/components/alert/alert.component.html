@@ -1,0 +1,12 @@
+<div *ngFor="let item of alerts">
+  <div mat-dialog-content>
+  <app-icon [type]=item.statusIcon></app-icon>
+  <span> Your trip was successfully booked</span>
+</div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-icon-button mat-dialog-close *ngFor="let item of alerts">
+    <app-icon [type]=item.cancelBtn ></app-icon>
+  </button>
+</div>

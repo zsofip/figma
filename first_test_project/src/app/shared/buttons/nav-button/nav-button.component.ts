@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NavBtn } from 'src/app/models/navBtn';
+import { MatAppService } from 'src/app/services/mat-app.service';
 
 @Component({
   selector: 'app-nav-button',
@@ -7,9 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavButtonComponent implements OnInit {
 
-  @Input() btnText: string = 'test';
+  navBtns: NavBtn[] = this.matappservice.navBtns;
 
-  constructor() { }
+
+  constructor(private matappservice: MatAppService) { }
 
   ngOnInit(): void {
   }
