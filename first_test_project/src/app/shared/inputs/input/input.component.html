@@ -1,9 +1,19 @@
 <div class="input-container form-floating">
-  <input type="text" class="form-control" id="username" placeholder="username">
-  <label for="username">Username
+  <input type="text" class="form-control" placeholder="{{user?.username}}">
+  <label>Username
   </label>
   <span>
     <app-icon type="user-icon"></app-icon>
-
   </span>
 </div>
+
+<!-- <mat-form-field class="input-container form-floating" appearance="fill">
+  <mat-label>Username</mat-label>
+  <input type="text" matInput [formControl]="usernameFormControl">
+  <mat-error *ngIf="usernameFormControl.hasError('pattern') && !usernameFormControl.hasError('required')">
+    Username contains only letters
+  </mat-error>
+  <mat-error *ngIf="usernameFormControl.hasError('required')">
+    Username is <strong>required</strong>
+  </mat-error>
+</mat-form-field> -->

@@ -1,0 +1,58 @@
+#mat-dialog {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+
+  position: relative;
+  width: 344px;
+  height: 80px;
+
+  background: #ffffff;
+
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+
+  margin: -24px;
+}
+
+#mat-content {
+  align-items: flex-start;
+}
+
+#dialog-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #4caf50;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+#mat-action {
+  margin-bottom: 0px;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#statusIcon {
+  width: 24px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+

@@ -1,5 +1,4 @@
 .blueBtn {
-  /* Auto layout */
 
   display: flex;
   flex-direction: row;
@@ -8,40 +7,21 @@
   padding: 0px 16px;
   gap: 16px;
 
-  /*!!!!!!!! book: width: 73px;
-  height: 28px;
-  login: width: 329px;
-height: 52px;*/
-
-  /* custom/primary */
-
   background: #3f51b5;
   border-radius: 4px;
 
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
-  /*!!!!!! login: align-self: stretch; */
   flex-grow: 0;
 
-  /* border */
   border: none;
 
-  /* text */
-  /* !!!!!!!!book: width: 41px;
-  height: 36px;
-  login: width: 46px;
-height: 36px;*/
-
-  /* v-text/button */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 36px;
 
-  /* identical to box height, or 257% */
 
   display: flex;
   align-items: center;
@@ -49,11 +29,8 @@ height: 36px;*/
   letter-spacing: 1.25px;
   text-transform: uppercase;
 
-  /* shades/white */
 
   color: #ffffff;
-
-  /* Inside auto layout */
 
   flex: none;
   order: 1;

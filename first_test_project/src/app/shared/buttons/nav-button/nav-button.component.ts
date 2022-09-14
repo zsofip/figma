@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavBtn } from 'src/app/models/navBtn';
+import { NavBtn } from 'src/app/models/navBtn.model';
 import { MatAppService } from 'src/app/services/mat-app.service';
 
 @Component({

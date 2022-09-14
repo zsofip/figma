@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import { Alert } from 'src/app/models/alert';
+import { Alert } from 'src/app/models/alert.model';
 import { MatAppService } from 'src/app/services/mat-app.service';
 
 @Component({
@@ -15,6 +15,10 @@ export class AlertComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<AlertComponent>, private matappservice: MatAppService) { }
 
   ngOnInit(): void {
+  }
+
+  closeDialog() {
+    this.dialogRef.close();
   }
 
 }

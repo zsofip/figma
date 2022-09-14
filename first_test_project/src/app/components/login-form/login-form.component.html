@@ -4,15 +4,45 @@
       <div class="card-body">
         <h2 class="card-title text-center">Login</h2>
 
-        <form action="">
-          <div class="mb-3">
-            <app-input></app-input>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="mb-3 input-container form-floating">
+
+              <input type="text" class="form-control" placeholder="username"
+              formControlName="username"
+              [class.is-invalid]="username?.touched && username?.invalid">
+              <label>Username
+              </label>
+              <span>
+                <app-icon type="user-icon"></app-icon>
+              </span>
+              <p class="invalid-feedback"
+               *ngIf="username?.touched && username?.hasError('required')">
+              Required field</p>
+              <p class="invalid-feedback"
+              *ngIf="username?.touched && username?.hasError('pattern')">
+              Username contains only letters.</p>
+
           </div>
-          <div class="mb-3">
-            <app-input></app-input>
+          <div class="mb-3 input-container form-floating">
+
+              <input type="text" class="form-control" placeholder="password"
+              formControlName="password"
+              [class.is-invalid]="password?.touched && password?.invalid">
+              <label>Password
+              </label>
+              <span>
+                <app-icon type="password-icon"></app-icon>
+              </span>
+              <p class="invalid-feedback"
+              *ngIf="username?.touched && username?.hasError('required')">
+             Required field</p>
+             <p class="invalid-feedback"
+             *ngIf="username?.touched && username?.hasError('pattern')">
+             Password contains only letters and numbers.</p>
           </div>
-          <div class="mb-3">
-            <app-submit-book-button></app-submit-book-button>
+          <div class="mb-3 d-grid gap-2">
+          <button type="submit" id="submitBtn" [disabled]="loginForm.invalid">Login
+          </button>
           </div>
         </form>
 

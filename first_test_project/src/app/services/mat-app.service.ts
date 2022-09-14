@@ -1,7 +1,8 @@
-import { Alert } from '../models/alert';
+import { Alert } from '../models/alert.model';
 import { Injectable } from '@angular/core';
-import { Card } from '../models/card';
-import { NavBtn } from '../models/navBtn';
+import { Card } from '../models/card.model';
+import { NavBtn } from '../models/navBtn.model';
+import { User } from '../models/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,8 @@ export class MatAppService {
   cards: Card[];
 
   alerts: Alert[];
+
+  users: User[] = [];
 
   constructor() {
     this.carouselImgs = [

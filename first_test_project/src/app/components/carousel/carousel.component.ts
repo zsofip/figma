@@ -10,9 +10,16 @@ export class CarouselComponent implements OnInit {
 
   carouselImgs: string[] = this.matappservice.carouselImgs;
 
+  username?: any;
+
   constructor(private matappservice: MatAppService) { }
 
   ngOnInit(): void {
+  }
+
+  showName() {
+    // console.log(this.matappservice.users[this.matappservice.users.length - 1]);
+    this.username = this.matappservice.users[this.matappservice.users.length - 1];
   }
 
 }

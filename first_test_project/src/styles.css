@@ -9,6 +9,11 @@ body {
   height: 100%;
 }
 body {
+  position: relative;
+  width: 375px;
+  height: 812px;
+
+  background: #ffffff;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }

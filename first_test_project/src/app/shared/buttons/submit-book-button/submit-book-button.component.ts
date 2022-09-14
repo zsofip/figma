@@ -14,7 +14,4 @@ export class SubmitBookButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick() {
-  }
-
 }

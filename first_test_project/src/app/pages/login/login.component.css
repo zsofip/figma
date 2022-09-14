@@ -1,0 +1,16 @@
+.container, .col {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.top-img {
+
+  width: 375px;
+height: 167px;
+left: 0px;
+right: 0px;
+
+}

@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatDialogModule } from '@angular/material/dialog';
 import { AlertComponent } from './components/alert/alert.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
@@ -46,9 +47,11 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
     MatCardModule,
+    MatFormFieldModule,
     MatDialogModule,
     BrowserAnimationsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
